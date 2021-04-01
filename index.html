@@ -13,7 +13,9 @@
         <header class="header">
 
             <div class="navigation">
-                <img src="./images/logo.svg" alt="Logo Fylo">
+                <figure class="image__logo">
+                    <img src="./images/logo.svg" alt="Logo Fylo">
+                </figure>
                 <nav class="nav">
                     <ul class="nav-list">
                         <li><a href="">Features</a></li>
@@ -24,9 +26,11 @@
             </div>
             
             <div class="hero">
-                <h2>All your files in one secure location accessible anywhere</h2>
-                <p>Fylo stores all you most important files in one secure location. Access them wherever you need, share and collaborate with friends, family and co-workers</p>
-                <button>Get Started</button>
+                <div class="hero-content">
+                    <h2>All your files in one secure location accessible anywhere</h2>
+                    <p>Fylo stores all you most important files in one secure location. Access them wherever you need, share and collaborate with friends, family and co-workers</p>
+                    <button>Get Started</button>
+                </div>                
             </div>
 
         </header>
@@ -36,25 +40,33 @@
             <section class="content">
 
                 <article class="main-content__access">
-                    <img src="./images/icon-access-anywhere.svg" alt="Icono de una computadora">
+                    <figure>
+                        <img src="./images/icon-access-anywhere.svg" alt="Icono de una computadora">
+                    </figure>                    
                     <h4>Access your file, anywhere</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas officiis labore excepturi magnam eaque vero temporibus</p>
                 </article>
 
                 <article class="main-content__security">
-                    <img src="./images/icon-security.svg" alt="Icono de una computadora">
+                    <figure>
+                        <img src="./images/icon-security.svg" alt="Icono de un signo de seguridad">
+                    </figure>                    
                     <h4>Security you can trust</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas officiis labore excepturi magnam eaque vero temporibus</p>
                 </article>
 
                 <article class="main-content__collaboration">
-                    <img src="./images/icon-collaboration.svg" alt="Icono de una computadora">
+                    <figure>
+                        <img src="./images/icon-collaboration.svg" alt="Icono de un personas colaborando">
+                    </figure>                    
                     <h4>Real-time collaboration</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas officiis labore excepturi magnam eaque vero temporibus</p>
                 </article>
 
                 <article class="main-content__store">
-                    <img src="./images/icon-any-file.svg" alt="Icono de una computadora">
+                    <figure>
+                        <img src="./images/icon-any-file.svg" alt="Icono de una carpeta">
+                    </figure>                    
                     <h4>Store any type of file</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas officiis labore excepturi magnam eaque vero temporibus</p>
                 </article>
@@ -76,7 +88,7 @@
 
                 <article class="main-content__comments">
 
-                    <div class="comment-first">
+                    <div class="comment">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis adipisci esse, consectetur reprehenderit quia, porro quasi omnis officiis expedita aut aliquam saepe repellendus optio amet corporis mollitia voluptatum maiores quas?</p>
                         <div class="profile">
                             <img src="./images/profile-1.jpg" alt="Foto de perfil del usuario">
@@ -85,7 +97,7 @@
                         </div>
                     </div>
 
-                    <div class="comment-second">
+                    <div class="comment">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis adipisci esse, consectetur reprehenderit quia, porro quasi omnis officiis expedita aut aliquam saepe repellendus optio amet corporis mollitia voluptatum maiores quas?</p>
                         <div class="profile">
                             <img src="./images/profile-2.jpg" alt="Foto de perfil del usuario">
@@ -94,7 +106,7 @@
                         </div>
                     </div>
 
-                    <div class="comment-third">
+                    <div class="comment">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis adipisci esse, consectetur reprehenderit quia, porro quasi omnis officiis expedita aut aliquam saepe repellendus optio amet corporis mollitia voluptatum maiores quas?</p>
                         <div class="profile">
                             <img src="./images/profile-3.jpg" alt="Foto de perfil del usuario">
@@ -122,13 +134,15 @@
 
                 <div class="info-ubication">
                     <img src="./images/logo.svg" alt="Logo Fylo">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem architecto quam tempora facilis maxime. Perspiciatis vitae sed obcaecati quibusdam, velit, porro repellat saepe, delectus possimus provident laborum nesciunt consectetur.</p>
+                    <div class="content-ubication">
+                        <a href=""><i class="fas fa-map-marker-alt"></i></a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem architecto quam tempora facilis maxime. Perspiciatis vitae sed obcaecati quibusdam</p>
+                    </div>
                 </div>
 
                 <div class="info-phone&email">
-                    <i class="fas fa-phone-volume"></i><p>+1 45454 3434 333</p>
-                    <i class="fas fa-envelope"></i><p>example@email.com</p>            
+                    <a href=""><i class="fas fa-phone-volume"></i></a><p>+1 45454 3434 333</p>
+                    <a href=""><i class="fas fa-envelope"></i></a><p>example@email.com</p>                             
                 </div>
 
                 <div class="info-aboutus">
@@ -149,10 +163,10 @@
                 </div>
 
                 <div class="info-socialmedia">
-                    <i class="fab fa-telegram"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>            
+                    <a href=""><i class="fab fa-telegram"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>            
                 </div>
                 
             </div>
