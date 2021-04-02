@@ -75,7 +75,7 @@ body {
 
 .navigation .nav {
     text-align: right;
-    margin: 0rem 0rem 0rem 19rem;
+    margin: 0rem 0rem 0rem 15rem;
 }
 
 .navigation .nav-list {
@@ -242,13 +242,13 @@ body {
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
+    margin: 1.2rem 0 0 0;
 }
 
 .profile .profile__name {
     font-size: 1.1rem;
     font-weight: bold;
     margin: 1rem 0 .5rem 0;
-    
 }
 
 /*-content__comment*/
