@@ -45,6 +45,80 @@
 
 body {
     font-size: 14px;
-    background: var(--colorDarkBlue2);
+    background: var(--colorDarkBlue1);
     font-family: OpenSans;
+    color: var(--colorWhite);
+}
+
+.wrapper {
+    padding: 4rem;
+    
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 7fr;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    flex-grow: 1;
+    gap: 2rem;
+}
+
+.navigation .nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation .nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem; 
+    
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: var(--colorWhite);
+    font-family: Raleway;
+    font-weight: bold;
+}
+
+.hero {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center ;
+}
+
+.hero .hero-content__img {
+    margin: 2rem;
+}
+
+.hero .hero-content__title {
+    font-size: 3rem;
+    font-family: Raleway;
+    font-weight: bold;
+    width: 51.5rem;
+}
+
+.hero .hero-content__description {
+    font-size: 1.6rem;
+    width: 45rem;
+    line-height: 2rem;
+    margin: 2.1rem;
+}
+
+.hero .hero-content__button {
+    background: var(--colorCyan);
+    color: var(--colorWhite);
+    font-size: 1.3rem;
+    padding: 1rem 5rem;
+    border-radius: 2rem;
+    text-shadow: black 0.1rem 0.1rem 0.2rem;
 }
