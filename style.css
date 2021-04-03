@@ -204,13 +204,14 @@ body {
     border-bottom: 1px solid var(--colorCyan);
 }
 
-.fas {
+.fa .fa-arrow-circle-right{
     display: inline-block;
-    color: blue;
+    color: var(--colorCyan);
 }
 
 .main-content__productive .productive__links a:hover{
     color: var(--colorWhite);
+    border-bottom: 1px solid var(--colorWhite);
 }
 /*-content__product*/
 /*content__comment*/
@@ -387,10 +388,10 @@ body {
 /*-footer*/
 
 @media(max-width:23.4rem) {
-    .wrapper {
+    .main .content__item {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 0rem;
     }
 }
