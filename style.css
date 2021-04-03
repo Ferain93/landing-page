@@ -204,11 +204,6 @@ body {
     border-bottom: 1px solid var(--colorCyan);
 }
 
-.fa .fa-arrow-circle-right{
-    display: inline-block;
-    color: var(--colorCyan);
-}
-
 .main-content__productive .productive__links a:hover{
     color: var(--colorWhite);
     border-bottom: 1px solid var(--colorWhite);
@@ -386,6 +381,17 @@ body {
 /*-info-socialmedia*/
 /*-info*/
 /*-footer*/
+/*icons*/
+.fa .fa-arrow-circle-right{
+    display: inline-block;
+    color: var(--colorCyan);
+}
+.icon .fa{
+    display: inline-block;
+    background: red;
+    color: brown;
+}
+/*icons*/
 
 @media(max-width:23.4rem) {
     .main .content__item {
