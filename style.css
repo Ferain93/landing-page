@@ -74,28 +74,23 @@ body {
     align-items: center;
 }
 
-.navigation .nav {
-    text-align: right;
-    margin: 0rem 0rem 0rem 15rem;
-}
-
 .navigation .nav-list {
     list-style: none;
     display: flex;
     flex-direction: row;
     gap: 5rem; 
+    justify-content: flex-end;
 }
 
 .nav-list li:hover {
     text-decoration: underline;
-    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .nav-list a{
     text-decoration: none;
     color: var(--colorWhite);
     font-family: Raleway;
-    font-weight: bold;
     font-size: 1.1rem;
 }
 /*-navigation*/
@@ -126,12 +121,12 @@ body {
 }
 
 .hero .hero-content__button {
-    background: var(--colorBlue);
+    background: linear-gradient(0deg, var(--colorBlue), var(--colorCyan));
     color: var(--colorWhite);
     font-size: 1.3rem;
     padding: 1rem 5rem;
     border-radius: 2rem;
-    text-shadow: black 0.1rem 0.1rem 0.2rem;
+    border: none;    
 }
 
 .hero .hero-content__button:hover {
@@ -216,10 +211,10 @@ body {
 .main-content__productive .productive__links a::after{
     content: '';
     position: absolute;
-    width: 11rem;
+    width: 12rem;
     height: .1rem;
     background-color: var(--colorCyan);
-    margin: 1.5rem 0  0 -11rem;
+    margin: 1.8rem 0  0 -9.1rem;
 }
 /*-content__product*/
 /*content__comment*/
@@ -240,7 +235,7 @@ body {
 }
 
 .comment .comment__commentary {
-    text-align: justify;
+    text-align: left;
     line-height: 1.4rem;
 }
 
@@ -279,7 +274,6 @@ body {
     width: 65rem;
     height: 18rem;
     text-align: center;
-    margin-top: -15rem;  
 }
 
 .card .card__title {
@@ -302,22 +296,29 @@ body {
     background: var(--colorWhite);
     color: var(--colorDarkBlue5);
     font-size: 1.2rem;
-    padding: 1rem 12rem;
+    padding: 1rem;
     border-radius: 2rem;
-    margin-right: 2rem;
+    margin-right: 2rem; 
+    width: 32rem;
+    text-align: left;
 }
 
 .card-form .card-form__button {
-    background: var(--colorBlue);
+    background: linear-gradient(0deg, var(--colorBlue), var(--colorCyan));
     color: var(--colorWhite);
     font-size: 1.2rem;
     padding: 1rem 2rem;
     border-radius: 2rem;
-    text-shadow: black 0.1rem 0.1rem 0.2rem;
+    border: none;
 }
 
 .card-form .card-form__button:hover {
     background: var(--colorCyan);
+}
+
+.card-form[data-error]::after {
+    content: attr(data-error);
+    color: var(--colorLightRed);
 }
 /*-form*/
 /*-card*/
@@ -330,7 +331,7 @@ body {
     flex-grow: 1;
     gap: 1.5rem;
     padding: 12rem 4rem 8rem 4rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 /*info-ubication*/
 .info-ubication .info-ubication__img {
