@@ -142,26 +142,31 @@
         <footer class="footer">
 
             <div class="card">
-                <h3>Get early access today</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et tempora eligendi doloremque dignissimos exercitationem. Praesentium debitis, error id quasi tempore ipsa iste distinctio porro asperiores alias! Quae minus cumque exercitationem.</p>
-                <form action="">
-
+                <h3 class="card__title">Get early access today</h3>
+                <p class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et tempora eligendi doloremque dignissimos exercitationem. Praesentium debitis, error id quasi tempore ipsa iste distinctio porro asperiores alias! Quae minus cumque exercitationem.</p>
+                <form class="card-form" action="">
+                    <label for="correo">
+                        <input class="card-form__email" type="email" value="example@email.com" name="correo" id="correo" autocomplete="email" required>
+                    </label>
+                    <button class="card-form__button" type="submit">Get Started For Free</button>
                 </form>
             </div>
 
             <div class="info">
 
                 <div class="info-ubication">
-                    <img src="./images/logo.svg" alt="Logo Fylo">
+                    <figure class="info-ubication__img">
+                        <img src="./images/logo.svg" alt="Logo Fylo">
+                    </figure>                    
                     <div class="content-ubication">
                         <a href=""><i class="fas fa-map-marker-alt"></i></a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem architecto quam tempora facilis maxime. Perspiciatis vitae sed obcaecati quibusdam</p>
+                        <p class="info-ubication__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem architecto quam tempora facilis maxime. Perspiciatis vitae sed obcaecati quibusdam</p>
                     </div>
                 </div>
 
-                <div class="info-phone&email">
-                    <a href=""><i class="fas fa-phone-volume"></i></a><p>+1 45454 3434 333</p>
-                    <a href=""><i class="fas fa-envelope"></i></a><p>example@email.com</p>                             
+                <div class="info-phoneemail">
+                    <a href=""><i class="fas fa-phone-volume"></i></a><p class="info-phoneemail__phone">+1 45454 3434 333</p>
+                    <a href=""><i class="fas fa-envelope"></i></a><p class="info-phoneemail__email">example@email.com</p>                             
                 </div>
 
                 <div class="info-aboutus">
@@ -173,8 +178,8 @@
                     </ul>
                 </div>
 
-                <div class="info-contactus">
-                    <ul class="info-contactus__list">
+                <div class="info-contacts">
+                    <ul class="info-contacts__list">
                         <li><a href="">Contact Us</a></li>
                         <li><a href="">Terms</a></li>
                         <li><a href="">Privacy</a></li>

@@ -40,6 +40,7 @@
     --colorDarkBlue2: hsl(218, 28%, 13%);
     --colorDarkBlue3: hsl(216, 53%, 9%);
     --colorDarkBlue4: hsl(219, 30%, 18%);
+    --colorDarkBlue5: hsla(216, 18%, 16%, 0.616);
     --colorCyan: hsl(176, 68%, 64%);
     --colorBlue: hsl(198, 60%, 50%);
     --colorLightRed: hsl(0, 100%, 63%);
@@ -98,7 +99,7 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
-    text-align: center ;
+    text-align: center;
 }
 
 .hero .hero-content__img {
@@ -221,7 +222,7 @@ body {
 
 .main .comment {
     background: var(--colorDarkBlue4);
-    border-radius: 2rem;
+    border-radius: 1rem;
     padding: 2rem;
 }
 
@@ -250,11 +251,122 @@ body {
     font-weight: bold;
     margin: 1rem 0 .5rem 0;
 }
-
 /*-content__comment*/
 /*-main*/
 /*footer*/
 .footer {
     background: var(--colorDarkBlue3);
+    
 }
+/*card*/
+.footer .card {
+    background: var(--colorDarkBlue4);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 65rem;
+    height: 18rem;
+    text-align: center;
+    margin-top: -15rem;  
+}
+
+.card .card__title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Raleway;
+}
+
+.card .card__description {
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+/*form*/
+.card .card-form {
+    margin-top: 1.5rem;
+}
+
+.card-form .card-form__email{
+    background: var(--colorWhite);
+    color: var(--colorDarkBlue5);
+    font-size: 1.2rem;
+    padding: 1rem 12rem;
+    border-radius: 2rem;
+    margin-right: 2rem;
+}
+
+.card-form .card-form__button {
+    background: var(--colorCyan);
+    color: var(--colorWhite);
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-shadow: black 0.1rem 0.1rem 0.2rem;
+}
+/*-form*/
+/*-card*/
+/*info*/
+.footer .info {
+    display: grid;
+    grid-template-columns: 4fr 2fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 1.5rem;
+    padding: 12rem 4rem 8rem 4rem;
+    font-size: 1.3rem;
+}
+/*info-ubication*/
+.info-ubication .info-ubication__img {
+    margin-top: -3.3rem;
+}
+
+.info-ubication .info-ubication__description {
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+/*-info-ubication*/
+/*info-phoneemail*/
+.info .info-phoneemail {
+    margin: 1rem;
+}
+
+.info-phoneemail .info-phoneemail__email {
+    margin-top: 1rem;
+}
+/*-info-phoneemail*/
+/*info-aboutus*/
+.info-aboutus .info-aboutus__list {
+    list-style: none;
+    margin-top: 1rem;
+}    
+
+.info-aboutus .info-aboutus__list li{
+    margin: 1rem;
+}
+
+.info-aboutus .info-aboutus__list a{
+    text-decoration: none;
+    color: var(--colorWhite);
+}
+/*-info-aboutus*/
+/*info-contacts*/
+.info-contacts .info-contacts__list {
+    list-style: none;
+}    
+
+.info-contacts .info-contacts__list li{
+    margin: 1rem;
+}
+
+.info-contacts .info-contacts__list a{
+    text-decoration: none;
+    color: var(--colorWhite);
+}
+/*-info-contacts*/
+/*info-socialmedia*/
+.info .info-socialmedia {
+    margin: 1rem;
+}
+/*-info-socialmedia*/
+/*-info*/
 /*-footer*/
