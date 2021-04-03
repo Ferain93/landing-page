@@ -57,12 +57,23 @@ body {
         
 }
 /*-root*/
+/*width*/
+.width-70 {
+    width: 70%;
+    margin: auto;
+}
+
+.width-90 {
+    width: 90%;
+    margin: auto;
+}
+/*-width*/
 /*header*/
 .header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.6fr 7fr;
-    margin: 4rem 4rem 0 4rem;
+    margin: 4rem 0;
 }
 /*navigation*/
 .navigation {
@@ -110,12 +121,10 @@ body {
     font-size: 3rem;
     font-family: Raleway;
     font-weight: bold;
-    width: 51.5rem;
 }
 
 .hero .hero-content__description {
     font-size: 1.6rem;
-    width: 45rem;
     line-height: 2rem;
     margin: 2.1rem;
 }
@@ -143,13 +152,11 @@ body {
 .main .content__item{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    text-align: center ;
-    flex-grow: 1;
+    text-align: center;
     gap: 6rem;
-    padding: 6rem 15rem;
+    padding: 6rem 0;
 }
 
 .content__item .item__img {
@@ -177,7 +184,7 @@ body {
     text-align: center;
     flex-grow: 1;
     gap: 2rem;
-    margin: 4rem 4rem 4rem 4rem;
+    margin: 4rem auto;
 }
 
 .content__product .main-content__productive{
@@ -334,10 +341,12 @@ body {
 .info-ubication .info-ubication__description {
     margin-top: 1rem;
     line-height: 2rem;
+    display: flex;
 }
 /*-info-ubication*/
 /*info-phoneemail*/
 .info .info-phoneemail {
+    display: flex;
     margin: 1rem;
 }
 
@@ -388,13 +397,10 @@ body {
 }
 
 .icon .fa-map-marker {
-    margin: 0 0 -2rem -2rem;
     color: var(--colorCyan);
 }
 
 .icon-contact .fa {
-    display: inline-block;
-    margin: 0 0 -2rem -2rem;
     color: var(--colorWhite);
 }
 
@@ -423,14 +429,18 @@ body {
     border: 1px solid var(--colorCyan);
 }
 /*icons*/
-
+/*movil*/
 @media(max-width:26.8rem) {
+    .width-70 {
+        width: 100%;
+    }
+
+    .width-90 {
+        width: 100%;
+    }
+
     .main .content__item {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        gap: 2rem;
-        margin: 0;
+        grid-template-columns: 1fr;
         padding: 0;
     }
 
@@ -455,3 +465,4 @@ body {
         gap: 2rem;
     }
 }
+/*-movil*/
