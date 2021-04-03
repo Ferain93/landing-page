@@ -382,14 +382,45 @@ body {
 /*-info*/
 /*-footer*/
 /*icons*/
-.fa .fa-arrow-circle-right{
+.fa .fa-arrow-circle-right {
     display: inline-block;
     color: var(--colorCyan);
 }
+
+.icon .fa-map-marker {
+    margin: 0 0 -2rem -2rem;
+    color: var(--colorCyan);
+}
+
+.icon-contact .fa {
+    display: inline-block;
+    margin: 0 0 -2rem -2rem;
+    color: var(--colorWhite);
+}
+
 .icon .fa{
     display: inline-block;
-    background: red;
-    color: brown;
+    color: var(--colorWhite);
+}
+
+.icon-social .fa{
+    display: inline-block;
+    color: var(--colorWhite);
+    border-radius: 50%;
+    border: 1px solid var(--colorWhite);
+    padding: .5rem;
+    margin: .3rem;
+}
+
+.icon-social .fa-facebook {
+    padding-left: .7rem;
+    padding-right: .7rem;
+}
+
+.icon-social .fa:hover{
+    color: var(--colorCyan);
+    border-radius: 50%;
+    border: 1px solid var(--colorCyan);
 }
 /*icons*/
 
