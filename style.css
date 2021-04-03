@@ -86,6 +86,11 @@ body {
     gap: 5rem; 
 }
 
+.nav-list li:hover {
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+
 .nav-list a{
     text-decoration: none;
     color: var(--colorWhite);
@@ -121,12 +126,16 @@ body {
 }
 
 .hero .hero-content__button {
-    background: var(--colorCyan);
+    background: var(--colorBlue);
     color: var(--colorWhite);
     font-size: 1.3rem;
     padding: 1rem 5rem;
     border-radius: 2rem;
     text-shadow: black 0.1rem 0.1rem 0.2rem;
+}
+
+.hero .hero-content__button:hover {
+    background: var(--colorCyan);
 }
 /*-hero*/
 /*-header*/
@@ -198,6 +207,10 @@ body {
     text-decoration: none;
     color: var(--colorCyan);
     font-size: 1.3rem;
+}
+
+.main-content__productive .productive__links a:hover{
+    color: var(--colorWhite);
 }
 
 .main-content__productive .productive__links a::after{
@@ -295,12 +308,16 @@ body {
 }
 
 .card-form .card-form__button {
-    background: var(--colorCyan);
+    background: var(--colorBlue);
     color: var(--colorWhite);
     font-size: 1.2rem;
     padding: 1rem 2rem;
     border-radius: 2rem;
     text-shadow: black 0.1rem 0.1rem 0.2rem;
+}
+
+.card-form .card-form__button:hover {
+    background: var(--colorCyan);
 }
 /*-form*/
 /*-card*/
