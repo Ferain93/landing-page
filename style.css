@@ -393,11 +393,34 @@ body {
 }
 /*icons*/
 
-@media(max-width:23.4rem) {
+@media(max-width:26.8rem) {
     .main .content__item {
         display: flex;
         flex-direction: column;
+        align-self: center;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main .content__product {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 0rem;
+        gap: 2rem;
+    }
+
+    .main .main-content__comments {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
     }
 }
