@@ -298,7 +298,7 @@ body {
     padding: 1rem;
     border-radius: 2rem;
     margin-right: 2rem; 
-    width: 32rem;
+    width: 50%;
     text-align: left;
 }
 
@@ -309,6 +309,7 @@ body {
     padding: 1rem 2rem;
     border-radius: 2rem;
     border: none;
+    margin-top: 1rem;
 }
 
 .card-form .card-form__button:hover {
@@ -324,33 +325,44 @@ body {
 /*info*/
 .footer .info {
     display: grid;
-    grid-template-columns: 4fr 2fr 1fr 1fr 2fr;
+    grid-template-columns: 3fr 2fr 1.5fr 1.5fr 2fr;
     grid-template-rows: 1fr;
     justify-content: center;
     flex-grow: 1;
     gap: 1.5rem;
-    padding: 12rem 4rem 8rem 4rem;
+    padding: 12rem 0 8rem 0;
     font-size: 1.1rem;
 }
 /*info-ubication*/
+.info-ubication .content-ubication {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 .info-ubication .info-ubication__img {
-    margin-top: -3.3rem;
+    margin-top: -3.7rem;
 }
 
 .info-ubication .info-ubication__description {
-    margin-top: 1rem;
+    
     line-height: 2rem;
-    display: flex;
 }
 /*-info-ubication*/
 /*info-phoneemail*/
 .info .info-phoneemail {
-    display: flex;
-    margin: 1rem;
+    display: grid;
 }
 
-.info-phoneemail .info-phoneemail__email {
+.info-phoneemail .info-phone {
     margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.info-phoneemail .info-email {
+    display: flex;
+    gap: 1rem;
 }
 /*-info-phoneemail*/
 /*info-aboutus*/
@@ -404,12 +416,10 @@ body {
 }
 
 .icon .fa{
-    display: inline-block;
     color: var(--colorWhite);
 }
 
 .icon-social .fa{
-    display: inline-block;
     color: var(--colorWhite);
     border-radius: 50%;
     border: 1px solid var(--colorWhite);
@@ -455,6 +465,15 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+    }
+
+    .card-form .card-form__email{ 
+        width: 90%;
+        margin-right: 0;
+    }
+    
+    .card-form .card-form__button {
+        width: 90%;
     }
 
     .footer .info {
