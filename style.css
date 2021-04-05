@@ -111,6 +111,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 99;
 }
 
 .hero .hero-content__img {
@@ -147,6 +148,17 @@ body {
 .main {
     background: var(--colorDarkBlue2);
     margin: 0;
+    position: relative;
+}
+
+.main .wave {
+    background-image: url('./images/bg-curvy-desktop.svg');
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    top: -27rem;
+    left: 0;
+    right: 0;    
 }
 /*content__item*/
 .main .content__item{
@@ -440,6 +452,9 @@ body {
 /*icons*/
 /*movil*/
 @media(max-width:26.8rem) {
+    html {
+        display: flex;
+    }
     .width-70 {
         width: 100%;
     }
