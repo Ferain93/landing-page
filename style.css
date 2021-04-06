@@ -330,11 +330,6 @@ body {
 .card-form .card-form__button:hover {
     background: var(--colorCyan);
 }
-
-.card-form[data-error]::after {
-    content: attr(data-error);
-    color: var(--colorLightRed);
-}
 /*-form*/
 /*-card*/
 /*info*/
@@ -351,7 +346,7 @@ body {
 /*info-ubication*/
 .info-ubication .content-ubication {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 1rem;
 }
 
@@ -359,25 +354,26 @@ body {
     margin-top: -3.7rem;
 }
 
-.info-ubication .info-ubication__description {
-    
+.info-ubication .info-ubication__description {    
     line-height: 2rem;
 }
 /*-info-ubication*/
 /*info-phoneemail*/
 .info .info-phoneemail {
     display: grid;
+    height: 3rem;
 }
 
 .info-phoneemail .info-phone {
     margin-top: 1rem;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;    
 }
 
 .info-phoneemail .info-email {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+    margin-top: 1rem;
 }
 /*-info-phoneemail*/
 /*info-aboutus*/
@@ -485,7 +481,7 @@ body {
         width: 100%;
         height: 15rem;
         position: absolute;
-        top: -13rem;
+        top: -14.5rem;
         left: 0;
         right: 0;  
         background-repeat: no-repeat; 
@@ -503,6 +499,10 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+    }
+
+    .content__product .main-content__productive{
+        margin: 0;
     }
 
     .content__product .product__img img{
@@ -532,6 +532,20 @@ body {
 
     .footer .info {
         grid-template-columns: 1fr;
+    }
+
+    .info .info-aboutus {
+        margin-top: 2rem;
+    }
+
+    .info-aboutus .info-aboutus__list li {
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+
+    .info-contacts .info-contacts__list li {
+        margin: 0;
+        padding-bottom: 1rem;
     }
 }
 /*-movil*/
