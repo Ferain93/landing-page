@@ -156,9 +156,10 @@ body {
     width: 100%;
     height: 30rem;
     position: absolute;
-    top: -27rem;
+    top: -25rem;
     left: 0;
     right: 0; 
+    background-repeat: no-repeat; 
     background-size: 100%;    
 }
 /*content__item*/
@@ -457,6 +458,7 @@ body {
 @media(max-width:26.8rem) {
     html {
         display: flex;
+        width: 90%;
     }
     .width-70 {
         width: 90%;
@@ -531,7 +533,5 @@ body {
     .footer .info {
         grid-template-columns: 1fr;
     }
-
-
 }
 /*-movil*/
