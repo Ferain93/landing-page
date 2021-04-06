@@ -247,7 +247,17 @@ body {
     padding: 2rem;
 }
 
+.content__comment .quotes {
+    background-image: url('./images/bg-quotes.png');
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: -3rem;
+}
+
 .comment .comment__commentary {
+    position: relative;
     text-align: left;
     line-height: 1.4rem;
 }
